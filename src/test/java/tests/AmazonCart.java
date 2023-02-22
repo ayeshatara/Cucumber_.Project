@@ -28,7 +28,7 @@ public class AmazonCart{
     }
 
     @Test
-    public void aLogin() throws InterruptedException {
+    public void aLogin() {
         driver.get("https://www.amazon.in/");
         Cart login = new Cart(driver);
         login.getSignIn().click();
@@ -36,9 +36,6 @@ public class AmazonCart{
         login.getSubmitNum().click();
         login.getPassword().sendKeys("8296269156");
         login.getSubmitPass().click();
-//        driver.findElement(By.xpath("//input[@id=\"ap_password\"]"))
-//                .sendKeys("8296269156");
-        Thread.sleep(15000);
         String hello = login.getRetrieveText().getText();
         Assert.assertEquals(hello,"Hello, Ayesha");
     }
