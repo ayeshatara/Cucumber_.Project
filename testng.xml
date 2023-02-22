@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="5">
+
+    <test verbose="2" preserve-order="true" name="C:/Users/AYTARANN/Automation">
+        <classes>
+            <class name="tests.AmazonCart">
+                <methods>
+                    <include name="aLogin"/>
+                    <include name="bSearchProduct"/>
+                    <include name="cSelectQuantity"/>
+                    <include name="dAddCart"/>
+                    <include name="eInStock"/>
+                    <include name="fReviews"/>
+                    <include name="gDeliveryCharges"/>
+                    <include name="hSelectAddress"/>
+                </methods>
+            </class>
+            <class name="tests.DemoQA">
+                <methods>
+                    <include name="login"/>
+                    <include name="testCase1"/>
+                    <include name="textBox"/>
+                    <include name="button"/>
+                    <include name="dropDown"/>
+                    <include name="checkBox"/>
+                    <include name="hyperLink"/>
+                    <include name="waitsTest"/>
+                    <include name="Tables"/>
+                    <include name="fileTest"/>
+                    <include name="alertTest"/>
+                    <include name="frame"/>
+                    <include name="dragDrop"/>
+                    <include name="windowTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
